@@ -14,7 +14,7 @@ public class HammingDistance {
    */
   public int hammingDistance(int x, int y) {
     int ct = 0;
-    while (x == 0 && y == 0) {
+    while (x > 0 || y > 0) {
       ct += (x % 2) ^ (y % 2);
       x>>=1;y>>=1;
     }
